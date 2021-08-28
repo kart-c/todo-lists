@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	/* margin: 2rem; */
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	background: #f0f0f0;
+	box-shadow: 20px 20px 60px #ccc, -20px -20px 60px #fff;
+}
+
+input:first-of-type {
+	margin-right: 10px;
+}
+
+.todos {
+	width: 80%;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 10px;
+}
+
+li > div {
+	display: inline-block;
+}
+
+input[type='checkbox'] {
+	appearance: none;
+	cursor: pointer;
+	border: 1px solid;
+	height: 1rem;
+	width: 1rem;
+	background: #f0f0f0;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type='checkbox']:hover {
+	background-color: #fff;
+	background-image: radial-gradient(at top left, #f0ace0, transparent),
+		radial-gradient(at top right, #ffa4b2, transparent),
+		radial-gradient(at bottom left, #a7d3f2, transparent);
+}
