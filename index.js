@@ -32,8 +32,6 @@ function remove() {
 	arr.forEach((el) =>
 		el.addEventListener('click', (select) => {
 			select.target.parentElement.remove();
-			checkBox = document.querySelectorAll('input[type=checkbox]');
-			arr = Array.from(checkBox);
 		})
 	);
 }
